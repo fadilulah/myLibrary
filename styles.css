@@ -1,0 +1,48 @@
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.modal-content{
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 20%;
+}
+button.btn{
+    width: 20%;
+    align-self: center;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.close-btn{
+    font-size: 30px;
+}
+.close-btn:hover,.close-btn:focus{
+    color: red;
+    cursor: pointer;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+}
+.child{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
